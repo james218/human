@@ -6,6 +6,14 @@ package com.mycompany.human;
  */
 public class MakeHuman {
 
+    public static void printHumanDetails(String name, Human in) {
+        System.out.println("Human details "
+                + name + "\n"
+                + "Their age is " + in.getAge() + " \n"
+                + "They have " + in.getArms() + " arms \n"
+                + "They can say " + in.getSay() + " right now \n");
+    }
+
     public static void main(String[] args) {
         String name = "James";
 
@@ -13,30 +21,19 @@ public class MakeHuman {
 
         Human james = new Human();
 
-        System.out.println("Human details "
-                + name + "\n"
-                + "Their age is " + james.getAge()+ " \n"
-                + "They have " + james.getArms() + " arms \n"
-                + "They can say " + james.getSay() + " right now \n");
+        printHumanDetails(name, james);
 
         System.out.println("You suddenly grow another arm");
+        
         james.setArms(3);
 
-        System.out.println("Human details "
-                + name + "\n"
-                + "Their age is " + james.getAge() + " \n"
-                + "They have " + james.getArms() + " arms \n"
-                + "They can say " + james.getSay() + " right now \n");
+        printHumanDetails(name, james);
 
         System.out.println("You get a bit older" + " \n");
-              
+
         james.setAge(21);
 
-        System.out.println("Human details "
-                + name + "\n"
-                + "Their age is " + james.getAge() + " \n"
-                + "They have " + james.getArms() + " arms \n"
-                + "They can say " + james.getSay() + " right now \n");
+        printHumanDetails(name, james);
 
     }
 }
