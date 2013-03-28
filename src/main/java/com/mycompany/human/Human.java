@@ -14,6 +14,21 @@ public class  Human extends Mammal{
     private Integer arms = 2;
     private Boolean educated;
     private String say = "nnnngggg";
+    private String name;
+
+    public Human(String name) {
+        this.name = name;
+    }
+
+    
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
    
     
     

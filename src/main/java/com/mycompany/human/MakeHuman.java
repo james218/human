@@ -12,19 +12,19 @@ public class MakeHuman {
 
         System.out.println("***************Creating a new human now!!*********************");
 
-        Human james = new Human();
-        printHumanDetails.printHumanDetails(name, james);
+        Human human = new Human(name);
+        printHumanDetails.printHumanDetails(name, human);
         
 
         System.out.println("You suddenly grow another arm");   
-        james.setArms(3);
+        human.setArms(3);
         
-        printHumanDetails.printHumanDetails(name, james);
+        printHumanDetails.printHumanDetails(name, human);
 
         System.out.println("You get a bit older" + " \n");
-        james.setAge(21);
+        human.setAge(21);
 
-        printHumanDetails.printHumanDetails(name, james);
+        printHumanDetails.printHumanDetails(name, human);
 
     }
 }
