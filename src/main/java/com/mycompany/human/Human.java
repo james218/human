@@ -11,9 +11,9 @@ package com.mycompany.human;
 public class  Human extends Mammal{
 
     static Integer age = 0;
-    Integer arms = 2;
-    Boolean educated;
-    String say = "nnnngggg";
+    private Integer arms = 2;
+    private Boolean educated;
+    private String say = "nnnngggg";
    
     
     
@@ -21,13 +21,7 @@ public class  Human extends Mammal{
            in = say;
            return say;
     }
-        public void educatedSpeak(String in){
-         in = "unghh";
-    }
-    
-     public void unEducatedSpeak(String in){
-           in = "unghh";
-    }
+
 
         public Integer getAge() {
             return age;
