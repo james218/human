@@ -8,11 +8,7 @@ package com.mycompany.human;
  *
  * @author james
  */
-public class EducatedHuman extends Human {
-    
-     @Override
-    public String say() {
-        return "some fancy help message for B";
-    // ...
-    
+public class Animal {
+    static Boolean hasBrain = true;
+   
 }

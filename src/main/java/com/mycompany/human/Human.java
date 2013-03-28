@@ -8,9 +8,9 @@ package com.mycompany.human;
  *
  * @author james
  */
-public class  Human {
+public class  Human extends Mammal{
 
-    Integer age = 0;
+    static Integer age = 0;
     Integer arms = 2;
     Boolean educated;
     String say = "nnnngggg";

@@ -10,7 +10,10 @@ public class MakeHuman
     {
         Human james = new Human();
         System.out.println(james.getAge());
+                james.arms = 3;
         
+        Mammal mammalJames = new Mammal();
+       
         james.setAge(40);
         james.educated= Boolean.TRUE;
         System.out.println(james.getAge());
